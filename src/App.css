@@ -1,0 +1,37 @@
+.app-root {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+}
+
+.listing-card {
+  border: 2px solid !important;
+}
+
+.listing-card:hover {
+  border-width: 2px !important;
+}
+
+/* Smooth transitions for all interactive elements */
+.card,
+.btn,
+.nav-link {
+  transition: all 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .display-5 {
+    font-size: 2rem;
+  }
+
+  .listing-card .card-body {
+    padding: 1.5rem !important;
+  }
+}
+
+/* Ensure cards maintain aspect ratio on mobile */
+@media (max-width: 768px) {
+  .listing-card {
+    min-height: 200px;
+  }
+}
